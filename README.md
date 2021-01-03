@@ -1,4 +1,5 @@
 # battery_indicator
 
-1. Use 'node init.js'
-2. Run 'node main.js'
+1. Run 'node install'
+2. Use 'node init.js'
+3. Run 'node main.js'
