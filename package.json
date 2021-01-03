@@ -1,0 +1,24 @@
+{
+  "name": "battery_indicator",
+  "version": "1.0.0",
+  "description": "1. Use 'node init.js'\r 2. Run 'node main.js'",
+  "main": "main.js",
+  "dependencies": {
+    "node-module": "^2.0.0",
+    "node-hid": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zimniok/battery_indicator.git"
+  },
+  "author": "Zimniok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zimniok/battery_indicator/issues"
+  },
+  "homepage": "https://github.com/Zimniok/battery_indicator#readme"
+}
