@@ -5,6 +5,7 @@ module.exports = class gameSense{
   constructor() {
     this.address = JSON.parse(fs.readFileSync('C:/ProgramData/SteelSeries/SteelSeries Engine 3/coreProps.json', 'utf8')).address.split(':')
     console.log(this.address)
+    this.value = 0
   }
 
   sendBP(bp) {
@@ -12,10 +13,13 @@ module.exports = class gameSense{
       "game": "BATTERY_INDICATOR",
       "event": "BATTERY_PROCENTAGE",
       "data": {
-          "value": bp
+          "value": this.value,
+          "frame": {
+            "numericalvalue": bp
+          }
       }
     })
-
+    this.value = (this.value+1)%100
     const op = {
       hostname: this.address[0],
       port: this.address[1],

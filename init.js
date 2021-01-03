@@ -64,6 +64,7 @@ registerEvent = function(){
             "has-text": true,
             "bold": true,
             "prefix": "Battery:\n",
+            "context-frame-key": "numericalvalue"
             "suffix": " %"
           }
         ]
