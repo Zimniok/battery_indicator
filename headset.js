@@ -5,7 +5,7 @@ module.exports = class headset {
     constructor(deviceInfo) {
         this.headset_name = deviceInfo['product'].replace('SteelSeries ','');
         this.device = new HID.HID(deviceInfo.path);
-        this.device.setNonBlocking(HID.HID.no_block);
+        //this.device.setNonBlocking(HID.HID.no_block);
         if (!this.device)
             throw new Error('Error initialize Headset.');
     }
